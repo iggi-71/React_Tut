@@ -8,10 +8,11 @@ function POPOSList() {
 
     const spaces = data.map((obj) => {
         // Make a variable for each property
-        const { title, address, images, hours } = obj
+        const { title, address, images, hours, i } = obj
 
         return (
             <POPOSSpace
+                id={i}
                 key={title}
                 name={title} // no need for obj. here
                 address={address}
